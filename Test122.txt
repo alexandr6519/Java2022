@@ -1,0 +1,22 @@
+Пример класса 
+package lesson.lesson_07;
+
+import lesson.lesson_07.person.Person; // импорт класса
+
+public class PersonMain {
+    public static void main(String[] args) {
+        Person person = new Person("Ivan", "Ivanov", "89231232463");
+        person.print();
+
+        System.out.println(person.getName());
+    }
+}
+package lesson.lesson_07.person; // название пакета
+
+public class Person {
+    // поле класса. final - означает - переменная единственного присваивания
+    public static final int MAX_NAME_LENGTH = 100;
+}
+
+This is a new line for test.
+This is a second line for test.
